@@ -1,0 +1,24 @@
+{
+  "author": "Boris Hocdé",
+  "background": {
+    "scripts": [
+      "scripts/defaults.js",
+      "scripts/listener.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Shy Inputs",
+    "default_popup": "pages/popup.html"
+  },
+  "description": "Randomly makes fields try to escape your mouse",
+  "manifest_version": 2,
+  "name": "Shy Inputs",
+  "options_page": "pages/options.html",
+  "permissions": [
+    "storage",
+    "tabs",
+    "*://*/*"
+  ],
+  "version": "0.0.1"
+}

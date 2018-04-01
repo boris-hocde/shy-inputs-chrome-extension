@@ -1,0 +1,98 @@
+/**
+ * Body
+ */
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+body.popup {
+    overflow: hidden;
+    width: 220px;
+}
+
+/**
+ * Logo
+ */
+.logo {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+.popup .logo {
+    padding: 5px 0;
+    text-align: center;
+}
+.options .logo {
+    padding: 10px 10%;
+}
+.popup .logo img {
+    width: 150px;
+}
+.options .logo img {
+    width: 256px;
+}
+
+/**
+ * Section
+ */
+.popup section {
+    margin: 10px 0;
+}
+.options section {
+    margin: 40px 10%;
+}
+p {
+    margin: 0.5em 0;
+}
+
+/**
+ * Menu links
+ */
+.menu a {
+    color: #333333;
+    display: block;
+    padding: 5px 25px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #ebebeb;
+}
+.menu a .shortcut {
+    color: #999999;
+    float: right;
+}
+
+/**
+ * Form
+ */
+input[type=text] {
+    font: inherit;
+}
+button, input[type=submit] {
+    -webkit-appearance: none;
+    background-image: -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+    color: #444;
+    font: inherit;
+    margin: 0 1px 0 0;
+    outline: none;
+    text-shadow: 0 1px 0 rgb(240, 240, 240);
+    user-select: none;
+}
+button:hover, input[type=submit]:hover {
+    background-image: -webkit-linear-gradient(#f0f0f0, #f0f0f0 38%, #e0e0e0);
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    color: black;
+}
+button:focus, input[type=submit]:focus {
+    border-color: rgb(77, 144, 254);
+    outline: none;
+    transition: border-color 200ms;
+}
+button.pending, input[type=submit].pending {
+    opacity: 0.4;
+    cursor: wait;
+}
